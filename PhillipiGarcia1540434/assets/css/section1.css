@@ -1,0 +1,226 @@
+.section1 {
+  margin: 120px 60px 0px 60px;
+  gap: 30px;
+}
+
+
+.section1 .title {
+  display: flex;
+  justify-content: center;
+}
+
+.section1 .title h1 {
+  position: absolute;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: var(--c8);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#profile_picture {
+  max-width: 50vw;
+  height: auto;
+}
+
+.section1 .title img {
+  margin-top: 60px;
+  width: 91.5vw;
+  height: 3px;
+}
+
+.section1 .container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  margin-top: 30px;
+  gap: 150px;
+}
+
+
+#profile_picture {
+  max-width: 50vh;
+  border-radius: 10px;
+}
+
+.section1 .container .content {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+}
+
+.section1 .container .content .introduction {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+  grid-column: 1 / 4;
+  grid-row: 1 / 3;
+  flex: 1;
+}
+
+.section1 .container .content .infos {
+  grid-column: 1 / 2;
+  grid-row: 4;
+}
+
+.section1 .container .content .links {
+  grid-column: 3 / 4;
+  grid-row: 4;
+  display: flex;
+  gap: 20px;
+  justify-self: end;
+}
+
+.section1 .container .content .introduction h2 {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.8rem;
+  color: var(--a4);
+}
+
+.section1 .container .content .introduction p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--c7);
+}
+
+.section1 .container .content .infos .location,
+.contact {
+  display: flex;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.section1 .container .content .location img {
+  width: 20px;
+  height: auto;
+}
+
+.section1 .container .content .location p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 25px;
+  color: var(--c6);
+  text-align: center;
+  margin: 0;
+  margin-left: 4px;
+}
+
+.section1 .container .content .contact img {
+  width: 23px;
+  height: auto;
+}
+
+.section1 .container .content .contact a {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .section1 .container .content .infos {
+    grid-column: 1 / 2;
+    grid-row: 3;
+  }
+
+  .section1 .container .content .links {
+    grid-column: 1 / 2;
+    grid-row: 4;
+    display: flex;
+    gap: 20px;
+    justify-self: first baseline;
+  }
+
+  .section1 .container .content {
+    gap: 30px;
+  }
+
+}
+
+@media screen and (max-width: 995px) {
+
+  .section1 .container {
+    grid-template-columns: auto;
+    gap: 30px;
+  }
+
+  .section1 .container #profile_picture {
+    margin: 0 auto;
+  }
+
+  .section1 .container .introduction h2 {
+    text-align: center;
+  }
+
+  .section1 .container .content .links img {
+    width: 45px;
+    height: auto;
+  }
+
+  #profile_picture {
+    width: 60vw;
+    height: auto;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+
+  .title {
+    margin-top: 100px;
+  }
+
+  #profile_picture {
+    width: 40vw;
+    height: auto;
+    justify-self: center;
+  }
+
+  .section1 {
+
+    margin: 0px 20px !important;
+
+  }
+
+  .section1 h2 {
+    font-size: 1rem !important;
+  }
+
+  .section1 .introduction p {
+    font-size: 0.8rem !important;
+    max-width: 40ch;
+  }
+
+  .infos p {
+    font-size: 0.5rem;
+  }
+
+
+}
+
+@media screen and (max-width: 350px) {
+
+  .introduction {
+    max-width: 200px !important;
+    display: grid !important;
+    grid-template-columns: auto !important;
+    grid-template-rows: auto auto !important;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: auto !important;
+    grid-template-rows: auto auto auto !important;
+    max-width: 230px !important;
+  }
+
+  .container {
+    max-width: 280px !important;
+
+  }
+
+}

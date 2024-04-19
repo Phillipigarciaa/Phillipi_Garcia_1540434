@@ -1,0 +1,25 @@
+.repo_itens {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.repo_itens p {
+    color: white !important;
+}
+
+.repo {
+    background-color: var(--a4);
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+.prepo p {
+    font-size: 1.1rem !important;
+}
+@media  (max-width:500px) {
+    .h1repo {
+        font-size: 1rem !important;
+        padding: 30px;
+    }
+}

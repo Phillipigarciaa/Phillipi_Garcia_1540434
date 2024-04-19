@@ -1,0 +1,40 @@
+.section3 .title h1 {
+    position: absolute;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: var(--c8);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .section3 {
+  margin: 10vw auto;
+    gap: 30px;
+  }
+  
+  .section3 .title {
+      display: flex;
+      justify-content: center;
+  }
+  
+  .section3 .title img {
+      margin-top: 60px;
+      width: 91.5vw;
+      height: 3px; 
+  }
+  
+  .section3 .title {
+      margin: 0px 60px;
+  }
+
+  .section3 .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  @media screen and (max-width: 450px)  {
+    .section3 .title h1 {
+        font-size: 1.6rem;
+    }
+  }
